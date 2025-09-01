@@ -1,0 +1,215 @@
+/* HelpSupportPage.css */
+
+/* Set page background color*/
+body {
+  background-color: #FCFAEB;
+  font-family: Arial, sans-serif;
+}
+
+  /* Horizontal bar */
+  .horizontal-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items:center;
+    height: 20%;
+    background-color: #72A63F;
+    color: #000000;
+    padding-right: 300px;
+    
+    
+  }
+  
+  .Topic{
+    text-align: center;
+    margin-bottom: 10px;
+    
+  }
+
+  .col-md-5 {
+    margin: 0 auto; /* Center align the contact us column */
+  }
+
+  .Topic h1{
+    color:#000000;
+    font-weight: bold;
+  }
+
+  .subTopic{
+    text-align: center;
+    margin-left: 1%;
+    
+  }
+
+  .subTopic h2{
+    color:#000000;
+    font-weight: bold;
+  }
+
+  /* FAQ section */
+  .faq-section {
+    background-color: #f7f4cb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0.1, 0, 0.1);
+  }
+
+  /* FAQ item */
+  .faq-item {
+    list-style: none; 
+    margin-bottom: 20px;
+    
+  }
+  
+  /* FAQ question */
+  .faq-question{
+    background-color: #e8da3d;
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.2);
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 25px;
+    
+  }
+  .faq-question h5 {
+    text-align:left;
+    color:#000000;
+    font-weight: bold;
+    margin-left:10px;
+    margin-top: 5px;
+    align-items: center;
+    
+  }
+
+  /* FAQ answer */
+  .faq-answer {
+    background-color: #fefdf7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 25px;
+  }
+
+  .faq-answer p {
+    padding: 10px;
+    font-weight: bold;
+    
+  }
+
+  /* FAQ image */
+  .faq-image {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  
+  /* Contact Us button */
+  .contact-us-button {
+    text-align: center;
+    background-color: #f7f4cb;
+    width: 100%;
+    margin: 0 auto;  /*Center align the contact us button */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-us-button h4 {
+    color:#000000;
+    font-weight: bold;
+  }
+ 
+  
+  .contact-us-button button {
+    background-color: #72A63F;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+  
+  .contact-us-button button:hover {
+    background-color: #D4C22B;
+  }
+
+  .contact-us-button p {
+    font-size: 17px;
+    margin-top: 0;
+    margin-right: 10px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* User manual button */
+  .user-manual-button {
+    text-align: center;
+    background-color: #f7f4cb;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-manual-button h4 {
+    color:#000000;
+    font-weight: bold;
+  }
+
+
+  .user-manual-button button {
+    background-color: #72A63F;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+
+  .user-manual-button button:hover {
+    background-color: #D4C22B;
+  }
+
+
+  /* Centering columns */
+  .row {
+    display: flex;
+    justify-content: center;
+    margin: 0; 
+  }
+
+  .col-md-7 {
+    margin: 10px; /* Add margin to create spacing between columns */
+  }
+
+  .col-md-3 {
+    width: 100%;
+    
+  }
+
+  @media (max-width: 768px) {
+    .horizontal-bar {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .Topic, .col-md-5 {
+      width: 100%;
+      text-align: center;
+    }
+
+    .col-md-7, .col-md-3 {
+      width: 100%;
+      margin: 10px 0;  /*Add vertical margin for small screens*/
+    }
+  }

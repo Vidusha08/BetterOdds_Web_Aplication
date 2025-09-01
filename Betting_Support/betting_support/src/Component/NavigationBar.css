@@ -1,0 +1,29 @@
+/* NavigationBar.css */
+
+ .navbar-container {
+    background: #388F49;
+    height: '100vh'; /* Set height to full viewport height */
+    width: 250px; 
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: '250px';
+  }
+  
+
+  /* Set text color */
+  .list-unstyled {
+    color: white;
+    padding: 10px;
+  }
+
+  .navbar-link {
+    color: white;
+    padding: 10px 0;
+    text-decoration: none;
+  }
+  
+  .navbar-link:hover {
+    background-color: #F7F4CB; /* Change link background on hover */
+  }

@@ -1,0 +1,228 @@
+/* ContactUsPage.css */
+
+/* Set page background color*/
+body {
+    background-color: #FCFAEB;
+    font-family: Arial, sans-serif;
+}
+  
+/* Horizontal bar */
+.horizontal-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items:center;
+    height: 20%;
+    background-color: #72A63F;
+    color: #000000;
+    padding-right: 300px;
+}
+    
+.Topic{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.col-md-5 {
+    margin: 0 auto; 
+}
+
+.Topic h1{
+    color:#000000;
+    font-weight: bold;  
+}
+
+.subTopic{
+    text-align: left;
+    margin-left: 1%;
+}
+
+.subTopic h2{
+    color:#000000;
+    font-weight: bold;
+}
+
+.contactSection__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline; 
+}
+
+/* Chatbot button container */
+.chatbot-button-container {
+    margin-right: 1%;
+}
+
+/* Style for chatbot button */
+.chatbot-button {
+    background-color: #2D9CDB;
+    color: black;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-button:hover {
+    background-color: #0A74DA;
+    color: white;
+}
+
+.contactSection__wrapper {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+/* Left side */ 
+.left {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+/* Contact information section*/
+.contact-item {
+    margin-bottom: 15px;
+    display: flex;
+    background-color: #FCFAEB;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow*/ 
+}
+
+/* Icon image*/ 
+.contact-icon {
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+  
+.info {
+    list-style: none;
+}
+
+.contact-item h5 {
+    margin-top: 6px;
+    font-weight: bold;
+}
+
+.vertical-line {
+    border-left: 2px solid #ccc;
+    height: auto;
+    min-height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-self: stretch;
+}
+
+/* Right side*/ 
+.right {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactSection__wrapper {
+      flex-direction: column;
+    }
+    .vertical-line {
+        display: none;
+    }
+    .left,
+    .right {
+      max-width: 100%;
+    }
+    .right {
+      padding: 4rem 2rem 2rem 2rem;
+    }
+}
+
+/* Form section */
+.contact-form {
+    background-color: #FCFAEB;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form h4 {
+    text-align: center;
+    margin-bottom: 15px;
+    color:#000000;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fefdf7;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 70px;
+}
+
+.form-buttons {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: #72A63F;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.clear-button {
+    background-color: #D4C22B;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+    cursor: pointer;
+    font-weight: bold;
+    margin-left:50px;
+}
+
+.submit-button:hover,
+.clear-button:hover {
+    opacity: 0.9;
+    color: #000;
+}

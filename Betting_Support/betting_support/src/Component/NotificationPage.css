@@ -1,0 +1,153 @@
+/* NotificationPage.css */
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+/* Set page background color*/
+body {
+    background-color: #FCFAEB;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Horizontal notification bar */
+  .notification-bar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+    background-color: #72A63F;
+    align-self: stretch;
+    padding-right: 300px;
+    color: #000000;
+    z-index: 1000;
+  }
+
+  .notification-bar h1 {
+    color:#000000;
+    font-weight: bold;
+    padding-left: 40px;
+    
+  }
+  /* Horizontal notification bar button & status */
+  .notification_status {
+      display: flex;
+      flex-direction:row;
+      align-items: flex-end;
+  }
+
+  .notification-bar p {
+   
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: left;
+    font-weight: bold;
+  }
+
+ /* Style "Mark all as read" button */
+ .mark-read-button {
+    background-color: #E8DA3D;
+    color: #000000;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+
+/* Hover effect for button */
+.mark-read-button:hover {
+    background-color: #D4C22B;
+  }
+
+/* Style notification container */
+.notification-container {
+    width: 1200px;
+    margin-left: 40px;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+  
+  /* Style notification-header */
+  .notification-header {
+    background-color: #72A63F;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+
+  /* Style notification-header buttons All, New & Unread */
+  .nav-button{
+    background-color: #F7F4CB;
+    color: #000000;
+    border: none;
+    padding: 5px 20px;
+    margin-right: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.2, 0.2);
+  }
+
+  .nav-button:hover {
+    color: #289f07;
+  }
+
+  /* Style table rows */
+  .table-row {
+    background-color: #FEFDF7;
+   
+  }
+  
+  
+  /* Style notification icons */
+  .icon-background {
+    background-color: #F7F4CB;
+    color: #000000;
+    padding: 2px 4px 8px 8px;
+    border-radius: 10px;
+    align-content: center;
+  }
+
+  .Icon{
+    color: #7c752e;
+  }
+
+  /* Increase table width and cell height */
+  .notification-table {
+    margin: auto;
+    width: 100%;
+    align-content:center;
+  }
+  
+  .notification-table td {
+    padding: 20px; 
+    text-align: left; 
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  /*Trash icon style*/
+  .Trash {
+    color: red;
+    align-content: center;
+    cursor: pointer;
+  }
+
+  .Trash:hover{
+    color: rgb(181, 27, 27);
+  }
+
+

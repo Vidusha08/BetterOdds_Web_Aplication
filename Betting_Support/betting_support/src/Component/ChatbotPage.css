@@ -1,0 +1,186 @@
+/* Chatbot Page.css */
+
+/* Set page background color */
+body {
+  background-color: #FCFAEB;
+  font-family: Arial, sans-serif;
+}
+
+/* Horizontal bar */
+.horizontal-bar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items:center;
+  height: 20%;
+  background-color: #72A63F;
+  color: #000000;
+  padding-right: 300px;
+  
+  
+}
+
+.Topic{
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+
+.col-md-5 {
+  margin: 0 auto; 
+}
+
+.Topic h1{
+  color:#000000;
+  font-weight: bold;
+}
+
+.subTopic{
+  text-align: left;
+  margin-left: 100px;
+  
+}
+
+.subTopic h2{
+  color:#000000;
+  font-weight: bold;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 900px;
+  padding: 0;
+  margin-left: 180px;
+  margin-bottom: 32px ;
+}
+
+/* Chat box */
+.chat-box {
+  background-color: #f7f4cb;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0.1, 0, 0.1);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.messages {
+  height: 320px;
+  overflow-y: auto;
+  background-color: #fefdf7;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  /*margin-bottom: 10px;*/
+  padding: 10px;
+  border-radius: 8px;
+  width: fit-content;
+  max-width: 65%;
+  margin-bottom: 10px;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #e8da3d;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: #000000;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #e9f7ff;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: #000000;
+}
+
+/* Message input and send button */
+.message-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #72A63F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-button:hover {
+  background-color: #4a7a29;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 1024px) {
+  .chatbot-container {
+    margin: 16px;
+    width: 100%;
+  }
+
+  .horizontal-bar {
+    padding-right: 150px;
+  }
+
+  .messages {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chatbot-container {
+    margin: 8px;
+    width: 100%;
+  }
+
+  .messages {
+    height: 200px;
+  }
+
+  .horizontal-bar {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .chatbot-container {
+    margin: 0;
+    width: 100%;
+  }
+
+  .messages {
+    height: 150px;
+  }
+
+  .horizontal-bar {
+    height: 16%;
+    padding-right: 100px;
+    padding-left: 5px;
+  }
+}
